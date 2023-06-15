@@ -115,7 +115,7 @@ int main(int argc, char** argv) {
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
     glutInitWindowSize(800, 600);
     glutCreateWindow("Cuarto de casa con OpenGL");
-
+    glutSpecialFunc(keyboard); // Registrar la función keyboard() como función de manejo del teclado especial
     glEnable(GL_DEPTH_TEST);
 
     glutDisplayFunc(display);
